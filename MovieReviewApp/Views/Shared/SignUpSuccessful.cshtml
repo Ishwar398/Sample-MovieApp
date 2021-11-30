@@ -1,0 +1,23 @@
+﻿<div class="row">
+    <div class="col-sm-12">
+        <h2 class="alert-success">Login Successful</h2>
+    </div>
+</div>
+<div class="col-sm-12">
+    <h3>User Login</h3>
+    <form action="@Url.Action("Login","User")" method="POST">
+        <div class="input-group">
+            <label for="#Email">Email</label>
+            <input id="Email" name="Email" type="email" required />
+        </div>
+        <br />
+        <div class="input-group">
+            <label for="#LoginPassword">Password</label>
+            <input id="LoginPassword" name="Password" type="password" required />
+        </div>
+        <br />
+        <div class="input-group">
+            <input type="submit" class="btn btn-primary" value="Login" />
+        </div>
+    </form>
+</div>

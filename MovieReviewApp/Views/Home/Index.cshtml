@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <h3>User Login</h3>
+            <form action="@Url.Action("Login","User")" method="POST">
+                <div class="input-group">
+                    <label for="#Email" >Email</label>
+                    <input id="Email" name="Email" type="email" required />
+                </div>
+                <br />
+                <div class="input-group">
+                    <label for="#LoginPassword">Password</label>
+                    <input id="LoginPassword" name="Password" type="password" required />
+                </div>
+                <br />
+                <div class="input-group">
+                    <input type="submit" class="btn btn-primary" value="Login" />
+                </div>
+            </form>
+            
+        </div>
+        <div class="col-sm-12 col-lg-6">
+            <h3>User Sign Up</h3>
+            <form action="@Url.Action("SignUp","User")" method="POST">
+                <div class="input-group">
+                    <label for="#SignupEmail">Email</label>
+                    <input id="SignupEmail" name="Email" type="email" required />
+                </div>
+                <br />
+                <div class="input-group">
+                    <label for="#BirthDate">Birthdate</label>
+                    <input id="BirthDate" name="BirthDate" type="date" required />
+                </div>
+                <br />
+                <div class="input-group">
+                    <label for="#SignupMobile">Email</label>
+                    <input id="SignupMobile" name="Number" type="number" required />
+                </div>
+                <br />
+                <div class="input-group">
+                    <label for="#LoginPassword">Password</label>
+                    <input id="LoginPassword" name="Password" type="password" required />
+                </div>
+                <br />
+                <div class="input-group">
+                    <input type="submit" class="btn btn-primary" value="Sign Up" />
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
